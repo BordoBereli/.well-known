@@ -21,8 +21,8 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-            	<!--android(contentId);-->
-            	window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
+            	android(contentId);
+            	<!--window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;-->
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
