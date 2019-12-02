@@ -33,20 +33,22 @@
         }
 
         function android(contentId) {
-        setTimeout(function () {
-             window.location = "http://market.android.com/details?id=com.avea.firsat";
-
-            }, 25);
 
             if (contentId != "") {
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
-            else if(cmd != "" && cmd.includes("bidunya_deep_link")) {
+            else {
+                setTimeout(function () {
+                    window.location = "http://market.android.com/details?id=com.avea.firsat";
+
+                }, 25);
+            }
+            <!--else if(cmd != "" && cmd.includes("bidunya_deep_link")) {
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
             }
             else {
             	window.location = "http://market.android.com/details?id=com.avea.firsat";
-            }
+            }-->
         }
 
         function ios(contentId) {
