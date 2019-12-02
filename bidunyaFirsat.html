@@ -21,7 +21,7 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-            	window.location = "https://play.google.com/store/apps/details?id=com.avea.firsat";
+            	window.location.assign("https://play.google.com/store/apps/details?id=com.avea.firsat");
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
