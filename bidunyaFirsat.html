@@ -32,18 +32,9 @@
         }
 
         function android(contentId) {
-            if (contentId != "") {
-                window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
-            }
-            else if(cmd != "" && cmd.includes("bidunya_deep_link")) {
-                	window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
-            }
-            else {
-            	setTimeout(function () {
+            setTimeout(function () {
              		window.location.assign("https://play.google.com/store/apps/details?id=com.avea.firsat");
             	}, 25);
-            }
-
         }
 
         function ios(contentId) {
