@@ -21,7 +21,8 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-            	android(contentId);
+            	<!--android(contentId);-->
+            	window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
@@ -36,7 +37,7 @@
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
             else if(cmd != "" && cmd.includes("bidunya_deep_link")) {
-                	window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
+                window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
             }
             else {
             	window.location = "http://market.android.com/details?id=com.avea.firsat";
