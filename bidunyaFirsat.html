@@ -21,7 +21,7 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-            	android(contentId);
+            	window.location = "http://market.android.com/details?id==com.avea.firsat";
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
@@ -29,12 +29,6 @@
             else {
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
             }
-        }
-
-        function android(contentId) {
-            setTimeout(function () {
-             		window.location.assign("https://play.google.com/store/apps/details?id=com.avea.firsat");
-            	}, 25);
         }
 
         function ios(contentId) {
