@@ -48,7 +48,7 @@
                 }, 50);
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
-            else if(cmd != "") {
+            else if(cmd.toLowerCase().includes("bidunya_deep_link")) {
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
             }
             else {
