@@ -21,7 +21,7 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-                androidOld(contentId);
+                androidOld(contentId, cmd);
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
@@ -41,7 +41,7 @@
             }
         }
 
-        function androidOld(contentId) {
+        function androidOld(contentId, cmd) {
             if (contentId != "") {
                 setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
