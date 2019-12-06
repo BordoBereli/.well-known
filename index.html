@@ -21,13 +21,23 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-            	window.location = "http://market.android.com/details?id=com.avea.firsat";
+                android(contentId);
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
             }
             else {
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
+            }
+        }
+
+        function android(contentId) {
+            if (contentId != null) {
+                window.location = "https://bordobereli.github.io/.well-known/cmd=bidunya_deep_link&campaign_id=" + contentId;
+            }
+            else {
+                window.location = "http://market.android.com/details?id=com.avea.firsat";
+
             }
         }
 
