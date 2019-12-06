@@ -45,8 +45,11 @@
             if (contentId != "") {
                 setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
-            }, 25);
+                }, 25);
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
+            }
+            else if(cmd != "") {
+                window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link";
             }
             else {
                 window.location = "http://market.android.com/details?id=com.avea.firsat";
