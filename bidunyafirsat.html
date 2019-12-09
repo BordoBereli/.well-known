@@ -48,7 +48,7 @@
         }
 
         function ios(contentId, cmd) {
-            if (contentId != null) {
+            if (contentId != "") {
                 window.location = "bidunyafirsat://cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
             else if(cmd.toLowerCase().includes("bidunya_deep_link")) {
