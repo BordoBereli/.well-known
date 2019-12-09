@@ -21,7 +21,7 @@
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-                androidOld(contentId, cmd);
+                android(contentId, cmd);
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId);
@@ -31,17 +31,7 @@
             }
         }
 
-        function android(contentId) {
-            if (contentId != "") {
-                window.location = "bidunyafirsat://cmd=bidunya_deep_link&campaign_id=" + contentId;
-            }
-            else {
-                window.location = "http://market.android.com/details?id=com.avea.firsat";
-
-            }
-        }
-
-        function androidOld(contentId, cmd) {
+        function android(contentId, cmd) {
             if (contentId != "") {
                 setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
@@ -57,17 +47,16 @@
             }
         }
 
-        function ios(contentId) {
-            setTimeout(function () {
-             window.location = "https://apps.apple.com/tr/app/bi-d%C3%BCnya-f%C4%B1rsat/id739894888?l=tr";
-
-            }, 25);
+        function ios(contentId, cmd) {
             if (contentId != null) {
-                window.location = "bidunyafirsat://campaign_id=" + contentId;
+                window.location = "bidunyafirsat://cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
-            else {
-                window.location = "bidunyafirsat://";
-
+            else if(cmd.toLowerCase().includes("bidunya_deep_link")) {
+                window.location = "bidunyafirsat://cmd=bidunya_deep_link";
+            } else {
+                setTimeout(function () {
+                    window.location = "https://apps.apple.com/tr/app/bi-d%C3%BCnya-f%C4%B1rsat/id739894888?l=tr";
+                }, 25);
             }
         }
     </script>
