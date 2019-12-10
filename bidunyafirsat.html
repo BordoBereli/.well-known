@@ -45,10 +45,10 @@
 
         function ios(contentId, cmd) {
             if (contentId != "") {
-                window.location = "bidunyafirsat://cmd=bidunya_deep_link&campaign_id=" + contentId;
+                window.location = "applinks:bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
             else if (cmd.toLowerCase().includes("bidunya_deep_link")) {
-                window.location = "bidunyafirsat://cmd=bidunya_deep_link";
+                window.location = "applinks:bordobereli.github.io/cmd=bidunya_deep_link";
             } else {
                 window.location = "https://apps.apple.com/tr/app/bi-d%C3%BCnya-f%C4%B1rsat/id739894888?l=tr";
             }
