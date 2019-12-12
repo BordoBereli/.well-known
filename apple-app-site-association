@@ -4,8 +4,9 @@
     "details": [
       {
         "appID": "D52Z4HS43N.com.avea.firsat",
-        "paths": [ "NOT /e/*", "*", "/",
-          "/.well-known/bidunyafirsat"
+        "paths": [
+          "/.well-known/bidunyafirsat",
+          "NOT /.well-known/*", "*", "/"
         ]
       }
     ]
