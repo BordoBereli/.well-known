@@ -9,7 +9,7 @@
             var contentId = "";
             var cmd = "";
 
-            alert(getlink.toLowerCase());
+            alert(getLink.toLowerCase());
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
                 contentId = splitLink[1];
@@ -24,6 +24,7 @@
                 console.info(cmd);
             }
 
+            var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
                 alert("We are in Android");
                 alert(userAgent.toLowerCase());
