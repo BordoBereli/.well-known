@@ -9,9 +9,6 @@
             var contentId = "";
             var cmd = "";
 
-            window.prompt('Are you feeling lucky');
-            console.info(getLink.toLowerCase());
-            console.info("checking campaing_id");
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
                 contentId = splitLink[1];
@@ -19,8 +16,6 @@
                 console.info(contentId);
             }
 
-            window.prompt('Are you feeling lucky');
-            console.info("checking cmd");
             if (getLink.toLowerCase().includes("cmd")) {
                 var splitLink = getLink.split("cmd=");
                 cmd = splitLink[1];
@@ -28,8 +23,6 @@
                 console.info(cmd);
             }
 
-            window.prompt('Are you feeling lucky');
-            var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
                 alert("We are in Android");
                 alert(userAgent.toLowerCase());
