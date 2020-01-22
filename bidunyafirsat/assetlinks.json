@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.avea.firsat",
+    "sha256_cert_fingerprints":
+    ["69:07:49:0C:CA:4A:67:69:69:C2:11:29:8F:E1:8F:10:71:2D:12:0E:BB:06:F3:59:5F:0B:97:3F:98:E4:3F:BB"]
+  }
+}]
