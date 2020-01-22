@@ -9,7 +9,6 @@
             var contentId = "";
             var cmd = "";
 
-            alert(getLink.toLowerCase());
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
                 contentId = splitLink[1];
@@ -35,7 +34,7 @@
         function android(contentId, cmd) {
             setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
-                }, 50);
+                }, 150);
             if (contentId != "") {
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
