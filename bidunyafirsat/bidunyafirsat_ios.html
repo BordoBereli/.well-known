@@ -43,12 +43,11 @@
         }
 
         function android(contentId, cmd) {
-            alert('Are you feeling lucky');
-            alert(cmd);
-            alert(contentId);
+            alert('Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
+
             setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
-                }, 50);
+                }, 5000);
             if (contentId != "") {
                 alert('Are you feeling lucky: https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=' + contentId);
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
