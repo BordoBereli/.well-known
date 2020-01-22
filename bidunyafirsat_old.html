@@ -9,53 +9,33 @@
             var contentId = "";
             var cmd = "";
 
-            window.prompt('Are you feeling lucky');
-            console.info(getLink.toLowerCase());
-            console.info("checking campaing_id");
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
                 contentId = splitLink[1];
-                console.info("campaing_id:");
-                console.info(contentId);
             }
 
-            window.prompt('Are you feeling lucky');
-            console.info("checking cmd");
             if (getLink.toLowerCase().includes("cmd")) {
                 var splitLink = getLink.split("cmd=");
                 cmd = splitLink[1];
-                console.info("checking cmd:");
-                console.info(cmd);
             }
 
-            window.prompt('Are you feeling lucky');
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-                alert("We are in Android");
-                alert(userAgent.toLowerCase());
                 android(contentId, cmd);
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
-                alert("We are in IOS");
-                alert(userAgent.toLowerCase());
                 ios(contentId, cmd);
             }
             else {
-                window.prompt('Are you feeling lucky');
-                alert("We are in desktop");
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
             }
         }
 
         function android(contentId, cmd) {
-            alert('Are you feeling lucky');
-            alert(cmd);
-            alert(contentId);
             setTimeout(function () {
                     window.location = "http://market.android.com/details?id=com.avea.firsat";
                 }, 50);
             if (contentId != "") {
-                alert('Are you feeling lucky: https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=');
                 window.location = "https://bordobereli.github.io/cmd=bidunya_deep_link&campaign_id=" + contentId;
             }
             else if(cmd.toLowerCase().includes("bidunya_deep_link")) {
@@ -64,7 +44,6 @@
         }
 
         function ios(contentId, cmd) {
-            alert('Are you feeling lucky');
             window.location = "https://apps.apple.com/tr/app/bi-d%C3%BCnya-f%C4%B1rsat/id739894888?l=tr";
         }
     </script>
