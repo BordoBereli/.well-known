@@ -9,6 +9,8 @@
             var contentId = "";
             var cmd = "";
 
+            window.prompt('Are you feeling lucky');
+            console.info(getLink.toLowerCase());
             console.info("checking campaing_id");
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
@@ -17,6 +19,7 @@
                 console.info(contentId);
             }
 
+            window.prompt('Are you feeling lucky');
             console.info("checking cmd");
             if (getLink.toLowerCase().includes("cmd")) {
                 var splitLink = getLink.split("cmd=");
@@ -25,6 +28,7 @@
                 console.info(cmd);
             }
 
+            window.prompt('Are you feeling lucky');
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
                 android(contentId, cmd);
@@ -37,7 +41,7 @@
                 console.info(userAgent.toLowerCase());
             }
             else {
-                alert();
+                window.prompt('Are you feeling lucky');
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
                 console.info("We are in desktop");
             }
