@@ -9,25 +9,36 @@
             var contentId = "";
             var cmd = "";
 
+            console.info("checking campaing_id");
             if (getLink.toLowerCase().includes("campaign_id")) {
                 var splitLink = getLink.split("campaign_id=");
                 contentId = splitLink[1];
+                console.info("campaing_id:");
+                console.info(contentId);
             }
 
+            console.info("checking cmd");
             if (getLink.toLowerCase().includes("cmd")) {
                 var splitLink = getLink.split("cmd=");
                 cmd = splitLink[1];
+                console.info("checking cmd:");
+                console.info(cmd);
             }
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
                 android(contentId, cmd);
+                console.info("We are in Android");
+                console.info(userAgent.toLowerCase());
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
                 ios(contentId, cmd);
+                console.info("We are in IOS");
+                console.info(userAgent.toLowerCase());
             }
             else {
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
+                console.info("We are in desktop");
             }
         }
 
