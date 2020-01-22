@@ -31,19 +31,19 @@
             window.prompt('Are you feeling lucky');
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
+                alert("We are in Android");
+                alert(userAgent.toLowerCase());
                 android(contentId, cmd);
-                console.info("We are in Android");
-                console.info(userAgent.toLowerCase());
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
+                alert("We are in IOS");
+                alert(userAgent.toLowerCase());
                 ios(contentId, cmd);
-                console.info("We are in IOS");
-                console.info(userAgent.toLowerCase());
             }
             else {
                 window.prompt('Are you feeling lucky');
+                alert("We are in desktop");
                 window.location.assign("https://bireysel.turktelekom.com.tr/ozel-avantajlar/sayfalar/ana-sayfa.aspx");
-                console.info("We are in desktop");
             }
         }
 
