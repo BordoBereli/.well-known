@@ -9,22 +9,18 @@
             var contentId = "";
             var cmd = "";
 
-            alert('Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
             if (getLink.toLowerCase().includes("content")) {
                 var splitLink = getLink.split("content=");
                 contentId = splitLink[1];
-                alert('Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
             }
 
             if (getLink.toLowerCase().includes("cmd")) {
                 var splitLink = getLink.split("cmd=");
                 cmd = splitLink[1];
-                alert('Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
             }
 
             var userAgent = navigator.appVersion;
             if (userAgent.toLowerCase().includes("android")) {
-                alert('Android Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
                 android(contentId, cmd);
             }
             else if (userAgent.toLowerCase().includes("iphone")) {
@@ -40,11 +36,9 @@
                     window.location = "http://market.android.com/details?id=tr.com.turktelekom.seninzamanin";
                 }, 50);
             if (contentId != "") {
-                alert('seninzamanin_deep_link&content -- Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
                 window.location = "https://bordobereli.github.io/cmd=seninzamanin_deep_link&content=" + contentId;
             }
             else if(cmd.toLowerCase().includes("seninzamanin_deep_link")) {
-                alert('seninzamanin_deep_link -- Are you feeling lucky --> cmd: ' + cmd + ', --> contentId: ' + contentId );
                 window.location = "https://bordobereli.github.io/cmd=seninzamanin_deep_link";
             }
         }
