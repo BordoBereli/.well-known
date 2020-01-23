@@ -6,4 +6,17 @@
     "sha256_cert_fingerprints":
     ["69:07:49:0C:CA:4A:67:69:69:C2:11:29:8F:E1:8F:10:71:2D:12:0E:BB:06:F3:59:5F:0B:97:3F:98:E4:3F:BB"]
   }
-}]
+},
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tr.com.turktelekom.seninzamanin",
+      "sha256_cert_fingerprints": [
+        "22:11:2A:B0:0B:9C:53:CB:9F:9A:D6:EB:C4:2D:C4:D7:83:C9:F7:4B:0A:33:C8:E6:9D:53:9D:FF:0D:C7:34:63"
+      ]
+    }
+  }
+]
