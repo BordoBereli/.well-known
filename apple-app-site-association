@@ -12,7 +12,7 @@
       {
         "appID": "D52Z4HS43N.com.turktelekom.seninzamanin",
          "paths": [
-           "/.well-known/seninzamanin/*"
+           "/.well-known/sz/*"
          ]
       }
     ]
