@@ -10,6 +10,14 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
+    "package_name": "com.avea.firsat",
+    "sha256_cert_fingerprints":
+    ["98:77:96:40:A6:4C:30:52:C8:0B:F0:36:15:F8:9B:0B:79:12:28:0B:89:55:4B:75:8A:0D:0A:92:67:96:33:14"]
+  }
+},{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
     "package_name": "tr.com.turktelekom.seninzamanin",
     "sha256_cert_fingerprints":
     ["69:07:49:0C:CA:4A:67:69:69:C2:11:29:8F:E1:8F:10:71:2D:12:0E:BB:06:F3:59:5F:0B:97:3F:98:E4:3F:BB"]
